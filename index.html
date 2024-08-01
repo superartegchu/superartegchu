@@ -1,504 +1,389 @@
 <!DOCTYPE html>
 <html lang="es-AR">
-  <!-- Head -->
-  <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Luna Bianchi Borches">
-        <meta name="description" content="Sitio Web de Luna Bianchi Borches | Portfolio">
-        <meta name="keywords" content="portfolio, portafolio, cv, currículum, profesional">
-        <meta name="copyright" content="Luna Bianchi Borches">
-        <meta name="robots" content="index, follow">
-        <title>Mi Portfolio | Luna Bianchi Borches</title>
-  <!-- icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <script src="https://kit.fontawesome.com/598d14f302.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./cliente/src/css/styles.css" type="text/css" media="all">
-  <link rel="shortcut icon" href="./public/imagenes/icon.png">
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="./Server/validaciones.mjs" type="module"></script> 
-
-<!-- Bootstrap JS desde CDN -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="SuperArte Gchu">
+  <meta name="description" content="SuperArte Gchu es una empresa dedicada a...">
+  <meta name="keywords" content="SuperArte Gchu, diseño, diseño grafico, diseño de marca, branding, agencia de diseño, agendas personalizadas, creacion de contenido, diseño de redes sociales, desarrollo de sitios webs, diseño de sitios webs, material publicitario, manejo de redes sociales, socialmedia, copywriting, marketing digital, freelancer">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="SuperArte Gchu">
+  <meta property="og:description" content="SuperArte Gchu es una empresa dedicada a...">
+  <meta property="og:image" content="./img/superarte.png">
+  <meta property="og:url" content="https://superartegchu.github.io">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>SuperArte Gchu</title>
+  <link rel="stylesheet" href="./styles.css?v=1.0" content-type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" content-type="text/css">
+  <script src="https://kit.fontawesome.com/598d14f302.js" crossorigin="anonymous" content-type="text/javascript"></script>
+  <link rel="shortcut icon" href="./img/superarte.png">
+  <script href="./app.js?v=1.0" content-type="text/javascript"></script>
 </head>
 <body>
-<!-- HEADER -->
-<header class="header" id="header">
-  <nav class="nav container">
-    <a href="#" class="nav-logo">Luna</a>
-    <div class="nav-menu" id="nav-menu">
-      <ul class="nav-list grid">
-        <li class="nav-item">
-          <a href="#home" class="nav-link">
-            <i class="bi bi-house nav-icon"></i>
-            Inicio
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link">
-            <i class="bi bi-person nav-icon"></i>
-            Acerca de mi
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#skills" class="nav-link">
-            <i class="bi bi-file-earmark nav-icon"></i>
-            Skills
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#experience" class="nav-link">
-            <i class="bi bi-briefcase nav-icon"></i>
-            Experiencia
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#portfolio" class="nav-link">
-            <i class="bi bi-image nav-icon"></i>
-            Portfolio
-          </a>
-        </li>
-        <!--
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">
-            <i class="bi bi-send nav-icon"></i>
-            Contacto
-          </a>
-        </li> -->
-      </ul>
-      <i class="bi bi-x-lg nav-close" id="nav-close"></i>
-    </div>
-    <div class="nav-btn">
-      <!-- BOTON PARA CAMBIAR DE MODO CLARO A MODO OSCURO -->
-      <i class="bi bi-moon dark-mode" id="dark-button"></i>
+   <!-- Contenido dinámico generado por remote_dev.php -->
+   <div id="content"></div>
 
-      <div class="nav-toggle" id="nav-toggle">
-        <i class="bi bi-list"></i>
-      </div>
-    </div>
-  </nav>
-</header>
-<!-- MAIN -->
-<main class="main">
-  <!-- HOME -->
-  <section class="home section" id="home">
-    <div class="home-container container grid">
-      <div class="home-content grid">
-        <div class="home-social">
-          <a href="https://linkedin.com/in/luna-bianchi-borches-005801205/" target="_blank" class="home-social-icon" rel="noopener noreferrer" title="Linkedin">
-            <i class="bi bi-linkedin"></i></a>
-          
-          <a href="https://github.com/lunabianchib" target="_blank" class="home-social-icon" rel="noopener noreferrer" title="Github">
-            <i class="bi bi-github"></i></a>
-          
-          <a href="https://www.instagram.com/luna_bianchib/" target="_blank" class="home-social-icon" rel="noopener noreferrer" title="Instagram">
-            <i class="bi bi-instagram"></i></a>
-          
-            <a href="https://wa.link/iv6ul9" target="_blank" class="home-social-icon" rel="noopener noreferrer" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-
-          <a href="https://www.behance.net/superartegchu/" target="_blank" class="home-social-icon" rel="noopener noreferrer" title="Behance"><i class="bi bi-behance"></i></a>
-        </div>
-        <div class="home-data">
-          <h1 class="home-title">Luna Bianchi Borches </h1>
-          <h3 class="home-subtitle">Diseñadora y Desarrolladora Front End</h3>
-          <p class="home-description">
-            Mis principales cualidades incluyen mi carácter autodidacta e inquieto, dedicado al 100% al aprendizaje e investigación de nuevos conocimientos relacionados con mi actividad profesional. Además, me destaco en el desarrollo de proyectos tanto a nivel individual como colectivo, siempre con el propósito de disfrutar, aprender y mejorar.      
-          </p>
-          <!--
-          <a href="#contact" class="button button-flex">
-            Contáctame <i class="bi bi-send button-icon"></i>
-          </a> -->
-        </div>
-      </div>
-      <div class="home-scroll">
-        <a href="#about" class="home-scroll-button button-flex">
-          <i class="bi bi-mouse home-scroll-mouse"></i>
-          <span class="home-scroll-name">¿Quieres saber más?</span>
-          <i class="bi bi-arrow-down-short home-scroll-arrow"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!--  ABOUT -->
-  <section class="about section" id="about">
-    <h2 class="section-title">Acerca de mi</h2>
-    <span class="section-subtitle">Mi Introducción</span>
-    <div class="about-container container grid">
-      <div class="about-img">
-              <img class="about-svg-img" src="./public/imagenes/me (2).jpg" title="Me" alt="Imagen de Luna Bianchi Borches">
-      </div>
-      <div class="about-data">
-        <p class="about-description">
-            Hola, soy Luna Bianchi Borches, una apasionada profesional argentina de 20 años. Me he formado en Diseño Gráfico y Animación Digital. Desde la secundaria, la programación y el diseño capturaron mi interés, llevándome a elegir dedicarme a esta fascinante combinación. Me describo como una persona ansiosa por aprender, comprometida con mis responsabilidades y con el deseo constante de crecer, tanto a nivel personal como profesional.
-        </p>
-        <div class="about-details">
-          <div class="about-info">
-            <span class="about-info-title"
-              ><i class="bi bi-geo-alt"></i
-            ></span>
-            <span class="about-info-name">Explorar</span>
-          </div>
-          <div class="about-info">
-            <span class="about-info-title">
-              <i class="fa fa-headphones"></i></span>
-            <span class="about-info-name">Escuchar</span>
-          </div>
-          <div class="about-info">
-            <span class="about-info-title"><i class="bi bi-book"></i></span>
-            <span class="about-info-name">Aprender</span>
-          </div>
-        </div>
-        <div class="about-buttons">
-          <a target="_blank" href="./public/pdf/CV%20Luna.pdf" class="button button-flex">
-            Descargar CV <i class="bi bi-box-arrow-in-down button-icon"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="skills section" id="skills">
-    <h2 class="section-title">Skills</h2>
-    <span class="section-subtitle">Soft & Hard Skills</span>
-    <div class="skills-container container grid">
-      <div>
-        <h2 class="skills-subtitle">Hard Skills</h2>
-        <div class="skills-cards">
-          <div class="skill-box">
-            <i class="fa-brands fa-html5 skill-icon"></i>
-            <h5 class="skill-text">HTML</h5>
-          </div>
-          <div class="skill-box">
-            <i class="fa-brands fa-css3-alt skill-icon"></i>
-            <h5 class="skill-text">CSS</h5>
-          </div>
-          <div class="skill-box">
-            <i class="fa-brands fa-js-square skill-icon"></i>
-            <h5 class="skill-text">JAVASCRIPT</h5>
-          </div>
-          <div class="skill-box">
-            <i class="fa-brands fa-wordpress skill-icon"></i>
-            <h5 class="skill-text">Wordpress</h5>
-          </div>
-          <div class="skill-box">
-            <i class="fa-brands fa-figma skill-icon"></i>
-            <h5 class="skill-text">FIGMA</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="soft-skills">
-        <h2 class="skills-subtitle">Soft Skills</h2>
-        <div class="skills-cards">
-          <div class="skill-box">
-            <i class="fa-solid fa-book skill-icon"></i>
-            <h5 class="skill-text">Autodidacta</h5>
-          </div>
-          <div class="skill-box">
-            <i class="fa-solid fa-paintbrush skill-icon"></i>
-            <h5 class="skill-text">Creativa</h5>
-          </div>
-          <div class="skill-box">
-            <i class="fa-solid fa-file skill-icon"></i>
-            <h5 class="skill-text">Responsable</h5>
-          </div>
-          <div class="skill-box">
-            <i class="fa-solid fa-brain skill-icon"></i>
-            <h5 class="skill-text">Growth Mindset</h5>
-          </div>
-          <div class="skill-box">
-            <i class="fa-solid fa-people-group skill-icon"></i>
-            <h5 class="skill-text">Trabajo en Equipo</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="experience section" id="experience">
-    <h2 class="section-title">Experiencia</h2>
-    <span class="section-subtitle">Mi cronología</span>
-
-    <div class="experience-container container">
-      <div class="experience-tabs">
-        <div
-          class="experience-button button-flex experience-active"
-          data-target="#education"
-        >
-          <i class="bi bi-mortarboard experience-icon"></i>
-          Educación
-        </div>
-      </div>
-      <div class="experience-sections">
-        <!-- ESTUDIOS -->
-        <div
-          class="experience-content experience-active"
-          data-content
-          id="education">
-          
-          <div class="experience-data">
-            <div>
-              <h3 class="experience-title">Tecnica en Diseño Grafico y Animación Digital</h3>
-              <span class="experience-subtitle">Universidad Siglo 21</span>
-              <div class="experience-calendar">
-                <p class="date" id="date1">
-                <i class="bi bi-calendar"></i>
-                Marzo 2021 - Diciembre 2023 <!-- Convertirlo en blanco cuando este en modo oscuro--></p>
-              </div>
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="nav-left">
+            <a href="#" class="nav-logo" title="Logo">
+                <div class="Icon">
+                <img src="./img/logo.png" alt="Logo SuperArte Gchu">SuperArte Gchu
             </div>
-
-            <div>
-              <span class="experience-rounder"></span>
-              <span class="experience-line"></span>
+          </a>
+        </div>
             </div>
-          </div>
-
-          
-
-          <div class="experience-data">
-            <div></div>
-            <div>
-              <span class="experience-rounder"></span>
-              <span class="experience-line"></span>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list grid">
+                    <li class="nav-item"><a href="#SobreNos" class="nav-link" title="link a sobre nosotros">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="#Servicios" class="nav-link" title="link a servicios">Servicios</a></li>
+                    <li class="nav-item"><a href="https://linktr.ee/superartegchu" class="nav-link" title="link a redes sociales">Redes Sociales</a></li>
+                    <li class="nav-item"><a href="https://www.behance.net/superartegchu" class="nav-link" title="link a portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contactanos" class="nav-link" title="link a contacto">Contacto</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" title="link a blog">Blog</a></li>
+                </ul>
             </div>
-            <div>
-              <h3 class="experience-title">Inglés Nivel Pre-Intermediate (B1)</h3>
-              <span class="experience-subtitle">Academia Cultural Inglesa</span>
-              <div class="experience-calendar">
-                <p class="date" id="date2">
-                <i class="bi bi-calendar"></i>
-                Finalizado - Diciembre 2023 <!-- Convertirlo en blanco cuando este en modo oscuro--></p>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="experience-data">
-            <div>
-              <h3 class="experience-title"> Oracle Next Education</h3>
-              <span class="experience-subtitle">Oracle-Alura</span>
-              <div class="experience-calendar">
-                <p class="date" id="date3">
-                <i class="bi bi-calendar"></i>
-                Finalizado - 2022 <!-- Convertirlo en blanco cuando este en modo oscuro--></p>
-              </div>
-            </div>
-
-            <div>
-              <span class="experience-rounder"></span>
-              <span class="experience-line"></span>
-            </div>
-          </div>
-
-            <div class="experience-data">
-              <div></div>
-              <div>
-                <span class="experience-rounder"></span>
-                <span class="experience-line"></span>
-              </div>
-              <div>
-                <h3 class="experience-title">Full Stack Developer FrontEnd y BackEnd</h3>
-                <span class="experience-subtitle">Argentina Programa 4.0</span>
-                <div class="experience-calendar">
-                    <p class="date" id="date4"><i class="bi bi-calendar"></i>
-                  En curso - 2024 <!-- Convertirlo en blanco cuando este en modo oscuro--></p>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home home-section" id="home">
+            <div class="home-data">
+              <div class="text-container">
+                <h1 class="home-title">¡Descubre el arte en su máxima Expresión!</h1>
+                <h3 class="home-subtitle">Transformamos ideas en creaciones visuales impactantes, creyendo en el diseño que comunica y cautiva.</h3>
+                <div class="home-btn">
+                  <a href="#SobreNos" class="button-flex" title="link a sobre nosotros" aria-label="sobre nosotros">
+                    <span class="home-scroll-name">Ver más</span>
+                  </a>
                 </div>
               </div>
+              <img src="./img/Illustration.png" alt="Ilustración" class="image">
             </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROYECTOS: PORTFOLIO -->
-  <section class="portfolio section" id="portfolio">
-    <h2 class="section-title">Portfolio</h2>
-    <span class="section-subtitle">Mis proyectos</span>
-    <div class="portfolio-container container">
-      <div class="proyecto">
-        <img src="./public/imagenes/encriptador-de-texto.png" alt="Proyecto">
-        <div class="proyecto-overlay">
-          <div class="project-data">
-            <h4 class="project-title">Encriptador de texto</h4>
-            <p class="project-description">
-                Es una página para encriptar y desencriptar el texto, se realizó como reto del programa Oracle Next Education.
-            </p>
-            <div class="project-btn">
-              <a href="https://lunabianchib.github.io/encriptador-de-texto" target="_blank" class="button button-small button-flex" rel="noopener noreferrer"> Demo <i class="bi bi-arrow-right-short button-icon"></i></a>
-              
-              <a href="https://github.com/lunabianchib/encriptador-de-texto" target="_blank" class="button button-small button-flex" rel="noopener noreferrer"> Repo <i class="bi bi-arrow-right-short button-icon"></i></a>
-              
+          </section>
+          <section class="sobrenos-section" id="SobreNos">
+            <div class="sobrenos-data">
+                <h1 class="sobrenos-title">Sobre Nosotros</h1>
+                <div class="container1">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="./img/card1.png" class="image2 edicionimagen" alt="quienes somos">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./img/card2.png" class="image2 edicionimagen2" alt="nuestra historia">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="./img/card4.png" class="image2 edicionimagen4" alt="nuestro compromiso">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./img/card3.png" class="image2 edicionimagen3" alt="nuestra misión">
+                        </div>
+                    </div>   
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="proyecto">
-        <img src="./public/imagenes/ahorcado.jpg" alt="Proyecto">
-        <div class="proyecto-overlay">
-          <div class="project-data">
-            <h4 class="project-title">Ahorcado</h4>
-            <p class="project-description">
-                Es un juego muy conocido, que se realizó como reto del programa Oracle Next Education.
-            </p>
-            <div class="project-btn">
-              <a href="https://lunabianchib.github.io/juego-ahorcado" target="_blank" class="button button-small button-flex" rel="noopener noreferrer">
-                Demo <i class="bi bi-arrow-right-short button-icon"></i></a>
-              <a href="https://github.com/lunabianchib/juego-ahorcado" target="_blank" class="button button-small button-flex" rel="noopener noreferrer"> Repo <i class="bi bi-arrow-right-short button-icon"></i></a>
+        </section>
+         <section class="Servicios servicios-section" id="Servicios">
+            <div class="servicios-data">
+                <h2 class="servicios-title">Servicios</h2>
+                <div class="servicios-subtitle">
+                  <p>En nuestro estudio creativo, nos especializamos en ofrecer servicios integrales de </p>
+                  <p>diseño que transforman tus ideas en realidad. Algunos de nuestros servicios son:</p>
+                </div>
+              </div>
+            <div class="services-block">
+                <div class="servicios-cards cards-section">
+                    <div class="card-container container">
+                        <div class="card card-pink">
+                          <div class="title-container">
+                            <h3 class="title">Diseño de Identidad</h3>
+                            <h3 class="title">de Marca</h3>
+                          </div>
+                          <img src="./img/Illustration1.png" alt="Diseño de Identidad de Marca" class="image1">
+                          <div class="conjunto-container">
+                            <a href="" title="" class="flex-container">
+                              <img src="./img/Icon.png" alt="Icono" class="Icono">
+                              <label class="ver-mas"><p>Ver más</p></label>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="card card-sky">
+                          <div class="title-container">
+                            <h3 class="title">Diseño de Agendas</h3>
+                            <h3 class="title">Personalizadas</h3>
+                          </div>
+                          <img src="./img/Illustration2.png" alt="Diseño de Agendas Personalizadas" class="image1">
+                          <div class="conjunto-container">
+                            <a href="" title="" class="flex-container">
+                              <img src="./img/Icon2.png" alt="Icono" class="Icono">
+                              <label class="ver-mas"><p>Ver más</p></label>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            <div class="servicios-cards cards-section2">
+                    <div class="card-container container">
+                        <div class="card card-black">
+                            <div class="title-container">
+                            <h3 class="title1">Manejo de</h3>
+                            <h3 class="title1">Redes Sociales</h3></div>
+                            <img src="./img/Illustration3.png" alt="Manejo de Redes Sociales" class="image1"> 
+                            <div class="conjunto-container">
+                            <a href="" title="" class="flex-container">
+                                <img src="./img/Icon3.png" alt="Icono" class="Icono">
+                                <label class="ver-mas1"><p>Ver más</p></label>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="card card-white">
+                        <div class="title-container">
+                            <h3 class="title">Diseño y Creación de</h3>
+                            <h3 class="title">Contenido (redes)</h3></div>
+                            <img src="./img/Illustration4.png" alt="Diseño y Creación de Contenido (redes)" class="image1">
+                            <div class="conjunto-container">
+                            <a href="" title="" class="flex-container">
+                                <img src="./img/Icon4.png" alt="Icono" class="Icono">
+                                <label class="ver-mas"><p>Ver más</p></label>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="servicios-cards cards-section3">
+                  <div class="card-container container">
+                    <div class="card card-blue">
+                      <div class="title-container">
+                        <h3 class="title">Desarrollo y Diseño</h3>
+                        <h3 class="title">de Sitios Webs</h3>
+                      </div>
+                      <img src="./img/Illustration5.png" alt="Desarrollo y Diseño de Sitios Webs" class="image1">
+                      <div class="conjunto-container">
+                        <a href="" title="" class="flex-container">
+                          <img src="./img/Icon5.png" alt="Icono" class="Icono">
+                          <label class="ver-mas"><p>Ver más</p></label>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card card-pink1">
+                      <div class="title-container">
+                        <h3 class="title">Diseño de Material</h3>
+                        <h3 class="title">Publicitario</h3>
+                      </div>
+                      <img src="./img/Illustration6.png" alt="Diseño de Material Publicitario" class="image1">
+                      <div class="conjunto-container">
+                        <a href="" title="" class="flex-container">
+                          <img src="./img/Icon6.png" alt="Icono" class="Icono">
+                          <label class="ver-mas"><p>Ver más</p></label>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="proyecto">
-        <img src="./public/imagenes/Conversor.png" alt="Proyecto">
-        <div class="proyecto-overlay">
-          <div class="project-data">
-            <h4 class="project-title">Conversor de Moneda</h4>
-            <p class="project-description">
-              Es software encargado de convertir el valor de una moneda en la de otra moneda, se realizó como reto del programa Oracle Next Education.
-            </p>
-            <div class="project-btn">
-              <a href="https://lunabianchib.github.io/conversor-moneda" target="_blank" class="button button-small button-flex" rel="noopener noreferrer">
-                Demo <i class="bi bi-arrow-right-short button-icon"></i></a>
-              <a href="https://github.com/lunabianchib/conversor-moneda" target="_blank" class="button button-small button-flex" rel="noopener noreferrer"> Repo <i class="bi bi-arrow-right-short button-icon"></i></a>
+         </section>
+         <section class="CTA block">
+            <div class="CTA">
+                <div class="card1">
+                    <div class="card-container1">
+                        <div class="escrito">
+                            <h3>Hagamos que las cosas sucedan</h3>
+                            <p>Póngase en contacto con nosotros hoy mismo para descubrir cómo nuestros servicios de diseño gráfico y web pueden transformar la identidad visual de su empresa y mejorar su presencia en línea.</p>
+                            <a href="#contactanos" class="button" title="link a contactanos" aria-label="contactanos">
+                              <span class="home-scroll-name">Empieza tu proyecto</span>
+                            </a>
+                        </div>
+                    <div class="illustration">
+                        <img src="./img/Illustration7.png" alt="Dibujo">
+                    </div>   
+                    </div>   
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-  </div>
-</section>
-
-  <!-- CONTACT -->
-  <!--
-  <section class="contact section" id="contact">
-    <h2 class="section-title">Contacto</h2>
-    <span class="section-subtitle">Creemos algo juntos</span>
-
-    <div class="contact-container container grid">
-      <form action="./guardar_datos.php" method="post" class="contact-form" id="contact-form" autocomplete="off">
-         <div class="contact-content">
-           <label for="nombre" class="contact-label">Nombre</label>
-           <input type="text" name="Nombre" id="nombre" class="contact-input" required pattern="[\s\S]{6,25}" minlength="6" maxlength="25" data-tipo="nombre" placeholder="Ingrese su nombre" data-tipoinput="texto">
-           <span class="error-message"></span>
+         </section>
+         <section class="Proceso proceso-section" id="Proceso">
+         <div class="proceso-trabajo">
+            <h3 class="proceso-title">Nuestro Proceso de Trabajo</h3>
+            <p class="proceso-subtitle">Guía paso a paso para alcanzar sus objetivos de marca</p>
          </div>
-        <div class="contact-content">
-          <label for="email" class="contact-label">Email</label>
-          <input type="email" name="Email" id="email" class="contact-input" required data-tipo="email" placeholder="Ingrese su email">
-          <span class="error-message"></span>
-        </div>
-        <div class="contact-content">
-          <label for="asunto" class="contact-label">Asunto</label>
-          <input type="text" name="Asunto" id="asunto" class="contact-input" required pattern="[\s\S]{10,40}" minlength="10" maxlength="40" data-tipo="asunto" placeholder="Ingrese el asunto">
-          <span class="error-message"></span>
-        </div>
-        <div class="contact-content">
-          <label for="textarea-mensaje" class="contact-label">Mensaje</label>
-          <textarea
-            name="Mensaje"
-            cols="30"
-            rows="10"
-            class="contact-input"
-            required
-            minlength="20"
-            maxlength="200"
-            data-tipo="mensaje"
-            id="textarea-mensaje"
-            placeholder="Escriba el mensaje"></textarea>
-          <span class="error-message"></span>
-        </div>    
+        </section>
+         <section>
+            <div class="process-block">
+                    <div class="container">
+                        <div class="step active">
+                          <div class="contenido">
+                          <span class="number">01</span>
+                          <span class="text">Consulta</span></div>
+                          <div class="acciones">
+                          <img src="./img/Plus-icon-negativo.png" class="negativo" alt="Icono negativo"></div>
+                          <img src="./img/Line.png" class="Linea" alt="Linea">
+                          <div class="partedeabajo"><p class="description">Durante la consulta inicial, hablaremos de sus metas y objetivos de diseño, su público objetivo y su identidad de marca actual. Esto nos permitirá comprender sus necesidades y adaptar nuestros servicios de diseño gráfico a sus requisitos específicos.</p>
+                        </div>
+                      </div>
+                        <div class="step">
+                          <div class="contenido1">
+                          <span class="number">02</span>
+                          <span class="text">Investigación y Análisis</span></div>
+                          <div class="acciones">
+                            <img src="./img/Plus-icon.png" class="positivo" alt="Icono positivo"></div>
+                            <img src="./img/Line.png" class="Linea1 linea-oculta" alt="Linea">
+                          <div class="partedeabajo">
+                          <p class="description">Realizaremos una investigación profunda sobre su industria, competencia y tendencias actuales de diseño. Esto nos ayudará a obtener una visión completa y a identificar oportunidades para destacar su marca.</p>
+                        </div>
+                        </div>
+                        <div class="step">
+                          <div class="contenido1">
+                          <span class="number">03</span>
+                          <span class="text">Propuesta de Diseño</span></div>
+                          <div class="acciones">
+                          <img src="./img/Plus-icon.png" class="positivo" alt="Icono positivo"></div>
+                          <img src="./img/Line.png" class="Linea1 linea-oculta" alt="Linea">
+                          <div class="partedeabajo">
+                          <p class="description">Desarrollaremos una propuesta detallada que incluirá conceptos iniciales de diseño, paletas de colores, tipografías y estilos visuales. Esta propuesta se presentará para su revisión y comentarios.</p>
+                        </div>
+                      </div>
+                        <div class="step">
+                          <div class="contenido1">
+                          <span class="number">04</span>
+                          <span class="text">Iteración y Revisión</span></div>
+                          <div class="acciones">
+                          <img src="./img/Plus-icon.png" class="positivo" alt="Icono positivo"></div>
+                          <img src="./img/Line.png" class="Linea1 linea-oculta" alt="Linea">
+                          <div class="partedeabajo">
+                          <p class="description">Basándonos en su feedback, refinaremos los conceptos iniciales y realizaremos las modificaciones necesarias para asegurarnos de que el diseño cumpla con sus expectativas y objetivos.</p>
+                        </div>
+                      </div>
+                        <div class="step">
+                          <div class="contenido1">
+                            <span class="number">05</span>
+                            <span class="text">Desarrollo del Diseño Final</span></div>
+                            <div class="acciones">
+                            <img src="./img/Plus-icon.png" class="positivo" alt="Icono positivo"></div>
+                            <img src="./img/Line.png" class="Linea1 linea-oculta" alt="Linea">
+                            <div class="partedeabajo">
+                            <p class="description">Una vez aprobado el concepto final, procederemos a desarrollar todos los elementos gráficos necesarios, incluyendo logotipos, materiales de marketing, diseño web, y cualquier otro componente solicitado.</p>
+                        </div>
+                      </div>
+                        <div class="step">
+                          <div class="contenido1">
+                            <span class="number">06</span>
+                            <span class="text">Entrega de Archivos</span></div>
+                            <div class="acciones">
+                            <img src="./img/Plus-icon.png" class="positivo" alt="Icono positivo"></div>
+                            <img src="./img/Line.png" class="Linea1 linea-oculta" alt="Linea">
+                            <div class="partedeabajo">
+                            <p class="description">Entregaremos todos los archivos finales en los formatos necesarios para su uso en diferentes plataformas y aplicaciones. Esto incluirá versiones para impresión, web y redes sociales.</p>
+                        </div>
+                      </div>
+                        <div class="step">
+                          <div class="contenido1">
+                            <span class="number">07</span>
+                            <span class="text">Soporte Continuo</span></div>
+                            <div class="acciones">
+                            <img src="./img/Plus-icon.png" class="positivo" alt="Icono positivo"></div>
+                            <img src="./img/Line.png" class="Linea1 linea-oculta" alt="Linea">
+                            <div class="partedeabajo">
+                            <p class="description">Ofrecemos soporte continuo para cualquier actualización o ajuste que pueda necesitar en el futuro. También podemos asesorarle sobre cómo implementar y mantener su nueva identidad visual de manera efectiva.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </section>
 
-        <input
-          type="submit"
-          value="Enviar Mensaje"
-          class="contact-btn button">
-      </form>
-    </div>
-  </section>
--->
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-bg">
-      <div class="footer-container container grid">
-        <div>
-          <h2 class="footer-title">Luna</h2>
-          <span class="footer-subtitle">Desarrolladora Web</span>
+         <section class="contactanos contactanos-section" id="contactanos">
+                  <div class="contactanos">
+                    <h3 class="contactanos-title">Contáctanos</h3>
+                    <p class="contactanos-subtitle">Hablemos de sus necesidades de diseño gráfico y cómo podemos ayudar a mejorar la identidad visual de su marca.</p>
+                  </div>
+        </section>
+        
+        <div class="contact">
+          <div class="contact-container">
+            <div class="form-container">
+              <form id="contact-form" action="https://formspree.io/f/xpwapbjn" method="post" onsubmit="return validateForm()">
+                <div class="content-form">
+                  <label for="nombre">Nombre*</label>
+                  <input type="text" id="nombre" name="nombre" autocomplete="name" required><br><br>
+                  
+                  <label for="email">Correo electrónico*</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required><br><br>
+                  
+                  <label for="mensaje">Mensaje*</label>
+                  <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+                  
+                  <input type="submit" value="Enviar Mensaje">
+                </div>
+              </form>
+            </div>
+            
+            <div class="image-container">
+              <img src="./img/Illustration8.png" alt="Dibujo">
+            </div>
+          </div>
         </div>
-
-        <ul class="footer-links">
-          <li>
-            <a href="#home" class="footer-link">Inicio</a>
-          </li>
-          <li>
-            <a href="#skills" class="footer-link">Skills</a>
-          </li>
-          <li>
-            <a href="#portfolio" class="footer-link">Portfolio</a>
-          </li>
-          <!--
-          <li>
-            <a href="#contact" class="footer-link">Contacto</a>
-          </li>-->
-        </ul>
-        <div class="footer-socials">
-          <a href="https://linkedin.com/in/luna-bianchi-borches-005801205/" target="_blank" class="footer-social" rel="noopener noreferrer" title="Linkedin">
-            <i class="bi bi-linkedin"></i></a>
-          
-          <a href="https://github.com/lunabianchib" target="_blank" class="footer-social" rel="noopener noreferrer" title="Github">
-            <i class="bi bi-github"></i></a>
-          
-          <a href="https://www.instagram.com/luna_bianchib/" target="_blank" class="footer-social" rel="noopener noreferrer" title="Instagram">
-            <i class="bi bi-instagram"></i></a>
-
-          <a href="https://wa.link/iv6ul9" target="_blank" class="footer-social" rel="noopener noreferrer" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-          <!--
-          <a href="https://mail.google.com/mail/u/bianchiborcheslunaa@gmail.com" target="_blank" class="footer-social" rel="noopener noreferrer" title="Gmail"><i class="bi bi-envelope-heart"></i></a>
-          -->
-          
-          <a href="https://www.behance.net/superartegchu/" target="_blank" class="footer-social" rel="noopener noreferrer" title="Behance"><i class="bi bi-behance"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
 </main>
-<!-- CONTACT VALIDATION -->
-<script type="module" src="./Server/app.js"></script>
-<script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
-<!-- MAIN JS -->
-<script type="module" src="./Server/main.mjs"></script>
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<!-- Bootstrap JS desde CDN -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<!--
-<script>
-  // Envolver en una función anónima para evitar conflictos
-  (function ($) {
-      $(document).ready(function () {
-          $('#contact-form').submit(function (e) {
-              e.preventDefault();
-  
-              $.ajax({
-                  type: 'POST',
-                  url: './guardar_datos.php',
-                  data: $('#contact-form').serialize(),
-                  success: function (response) {
-                      // Manejar la respuesta del servidor
-                      console.log(response);
-                  },
-                  error: function (error) {
-                      // Manejar errores de la petición AJAX
-                      console.log(error);
-                  }
-              });
-          });
-      });
-  })(jQuery);
-  </script>
-  -->
+        <footer class="footer">
+          <div class="footer-container grid">
+              <ul class="footer-links">
+                  <li><a href="#SobreNos" class="footer-link">Sobre Nosotros</a></li>
+                  <li><a href="#Servicios" class="footer-link">Servicios</a></li>
+                  <li><a href="https://www.behance.net/superartegchu" class="footer-link">Portfolio</a></li>
+                  <li><a href="#" class="footer-link">Blog</a></li>
+              </ul>
+              <div class="footer-socials">
+                  <a href="#" target="_blank" class="footer-social" rel="noopener noreferrer" title="Tiktok">
+                      <i class="bi bi-tiktok"></i>
+                  </a>
+                  <a href="https://www.instagram.com/superartegchu/" target="_blank" class="footer-social" rel="noopener noreferrer" title="Instagram">
+                      <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=61560261482068" target="_blank" class="footer-social" rel="noopener noreferrer" title="Facebook">
+                      <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="https://wa.link/kvdd6q" target="_blank" class="footer-social" rel="noopener noreferrer" title="Whatsapp">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="contact-us">
+                  <h3 class="footer-title">Contáctanos</h3>
+                  <p class="footer-contact"><i class="bi bi-envelope"></i> Superartegchu@gmail.com</p>
+                  <p class="footer-contact"><i class="bi bi-geo-alt"></i> Entre Ríos, Argentina.</p>
+              </div>
+              <div class="copyright">
+                  <p>&copy; 2024 SuperArte Gchu. Todos los derechos reservados.</p>
+                  <p><a href="#" class="footer-link">Política de Privacidad</a></p>
+              </div>
+          </div>
+      </footer>
+      <!-- Scripts JS -->
+      <script>
+        function validateForm() {
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const mensaje = document.getElementById('mensaje').value;
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (nombre === "") {
+                alert("Por favor, ingresa tu nombre.");
+                return false;
+            }
+
+            if (email === "" || !emailPattern.test(email)) {
+                alert("Por favor, ingresa un correo electrónico válido.");
+                return false;
+            }
+
+            if (mensaje === "") {
+                alert("Por favor, ingresa tu mensaje.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js" content-type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" content-type="text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" content-type="text/javascript"></script>
 </body>
 </html>
