@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Agendas | SuperArte Gchu</title>
+    <link rel="stylesheet" href="stylesagenda.css">
+    <meta name="description" content="En SuperArte ofrecemos diseño de agendas personalizadas y servicios integrales de diseño gráfico, incluyendo identidad visual, branding, creación de contenido, diseño de publicidad digital, y gestión de redes sociales. Transformamos tus ideas en arte visual único y profesional.">
+    <meta name="keywords" content="diseño de agendas personalizadas, diseño gráfico, SuperArte, diseño de identidades visuales, diseño de branding, creación de contenido, diseño de publicidad digital, diseño web, gestión de redes sociales">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="SuperArte Gchu">
+    <meta property="og:description" content="Descubre cómo SuperArte puede transformar tus ideas en arte visual. Ofrecemos diseño de agendas personalizadas, identidad visual, branding, y más para impulsar tu marca. ¡Haz que tu imagen destaque!">
+    <meta property="og:image" content="./img/superarte.png">
+    <meta property="og:url" content="https://superartegchu.github.io">
+    <link rel="shortcut icon" href="./img/superarte.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a onclick="goToHome()">Inicio</a></li>
+            <li><a onclick="gotoServices()">Servicios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="main-agenda">
+        <section class="agenda-design">
+            <h1>Diseña la Agenda de Tus Sueños</h1>
+            <p>Personalizamos agendas para que reflejen tu estilo único y te ayuden a mantener tu vida organizada. ¡Descubre cómo podemos transformar tu organización diaria!</p>
+            <a href="#contact" class="cta-button">Contáctanos</a>
+        </section>
+        <section class="agenda-design" id="services">
+            <div class="header-container">
+            <h1>Servicios</h1>
+            <p>En SuperArte Gchu, ofrecemos una amplia gama de servicios para crear la agenda perfecta para vos:</p>
+            </div>
+            <div class="services-agenda">
+                <div class="service-item-agenda">
+                    <h3>Portadas Únicas</h3>
+                    <p>Dale vida a tus agendas con portadas personalizadas que representan la esencia de tu marca o tus preferencias personales.</p>
+                </div>
+                <div class="service-item-agenda">
+                    <h3>Maquetación Interior</h3>
+                    <p>Organización intuitiva con calendarios, listas de tareas y planificadores mensuales/semanales, diseñados para mejorar tu productividad.</p>
+                </div>
+                <div class="service-item-agenda">
+                    <h3>Selección de Tipografías y Colores</h3>
+                    <p>Elegimos las tipografías y colores perfectos para complementar el estilo y necesidades de tu agenda.</p>
+                </div>
+                <div class="service-item-agenda">
+                    <h3>Elementos Personalizados</h3>
+                    <p>Añadimos citas inspiradoras y secciones especiales (metas, hábitos, etc.) para que tu agenda sea verdaderamente tuya.</p>
+                </div>
+                <div class="service-item-agenda">
+                    <h3>Diseño de Plantillas</h3>
+                    <p>Creamos plantillas reutilizables que permiten actualizaciones fáciles y futuras personalizaciones.</p>
+                </div>
+                <div class="service-item-agenda">
+                    <h3>Materiales y Acabados</h3>
+                    <p>Seleccionamos materiales de alta calidad y acabados sofisticados para asegurar un producto final excepcional.</p>
+                </div>
+                <div class="service-item-agenda">
+                    <h3>Branding Corporativo</h3>
+                    <p>Integramos la identidad visual de tu empresa en agendas corporativas ideales para regalos o uso interno.</p>
+                </div>
+            </div>
+        </section>
+        <section id="agenda-samples">
+            <h2>Muestras de Nuestras Agendas Personalizadas</h2>
+            <p>Explora nuestros diseños de agendas personalizadas y descubre cómo podemos adaptar cada detalle a tus necesidades.</p>
+            <!-- Botones para Filtrar Categorías -->
+            <div class="filter-buttons">
+              <button onclick="filterAgendas('all')">Todas</button>
+              <button onclick="filterAgendas('corporativa')">Corporativa</button>
+              <button onclick="filterAgendas('personalizada')">Personalizada</button>
+              <button onclick="filterAgendas('futbol')">Fútbol</button>
+              <button onclick="filterAgendas('oficios')">Oficios</button>
+              <button onclick="filterAgendas('series')">Series</button>
+           </div>
+            <div class="gallery">
+              <figure class="agenda-item corporativa">
+                <img src="./img/agendacorporativa.jpg" alt="Agenda Corporativa Ejemplo">
+                <figcaption>Agenda Corporativa</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda1.jpg" alt="Agenda Semanal - Diseño Interior Personalizado">
+                <figcaption>Agenda Semanal - Diseño Interior Personalizado </figcaption>
+              </figure>
+              <figure class="agenda-item corporativa">
+                <img src="./img/interior agenda.jpg" alt="Agenda Semanal - Diseño Interior Personalizado">
+                <figcaption>Agenda Corporativa - Diseño Interior Personalizado</figcaption>
+              </figure>
+              <figure class="agenda-item futbol">
+                <img src="./img/portada-agenda-futbol3.jpg" alt="Agenda Personalizada Maradona (1986)">
+                <figcaption>Agenda Personalizada Maradona (1986)</figcaption>
+              </figure>
+              <figure class="agenda-item futbol">
+                <img src="./img/portada-agenda-futbol.jpg" alt="Agenda Inspirada en el fútbol">
+                <figcaption>Agenda Inspirada en el fútbol</figcaption>
+              </figure>
+              <figure class="agenda-item futbol">
+                <img src="./img/2.png" alt="Agenda Inspirada en Messi">
+                <figcaption>Agenda Inspirada en Messi</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/portada agenda.jpg" alt="Agenda Diaria - Personalización con Portada Exclusiva">
+                <figcaption>Agenda Diaria - Personalización con Portada Exclusiva</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/portada agenda 2.jpg" alt="Agenda inspirada en signos zodiacales">
+                <figcaption>Agenda inspirada en signos zodiacales</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda2.jpg" alt="Agenda Diaria - Personalización con Portada Exclusiva">
+                <figcaption>Agenda Diaria - Personalización con Portada Exclusiva</figcaption>
+              </figure>
+               <figure class="agenda-item futbol">
+                <img src="./img/portada-agenda-futbol2.jpg" alt="Agenda Personalizada Messi Argentina">
+                <figcaption>Agenda Personalizada Messi Argentina</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/interioragenda1.jpg" alt="Agenda Semanal - Diseño Interior Personalizado">
+                <figcaption>Agenda Semanal - Diseño Interior Personalizado</figcaption>
+              </figure>
+              <figure class="agenda-item futbol">
+                <img src="./img/1.png" alt="Agenda Inspirada en Messi">
+                <figcaption>Agenda Inspirada en Messi</figcaption>
+              </figure>
+              <figure class="agenda-item futbol">
+                <img src="./img/3.png" alt="Agenda Inspirada en Messi">
+                <figcaption>Agenda Inspirada en Messi</figcaption>
+              </figure>
+              <figure class="agenda-item futbol">
+                <img src="./img/4.png" alt="Agenda Inspirada en Miami">
+                <figcaption>Agenda Inspirada en Miami</figcaption>
+              </figure>
+              <figure class="agenda-item futbol">
+                <img src="./img/5.png" alt="Agenda Inspirada en el Inter de Miami">
+                <figcaption>Agenda Inspirada en el Inter de Miami</figcaption>
+              </figure>
+              <figure class="agenda-item corporativa">
+                <img src="./img/agenda3.jpg" alt="Ejemplo de Agenda Corporativa">
+                <figcaption>Agenda Corporativa</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/interioragenda2.jpg" alt="Diseño Interior Personalizado">
+                <figcaption>Diseño Interior Personalizado</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda5.jpg" alt="Ejemplo de Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda6.jpg" alt="Ejemplo de Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/interioragenda3.jpg" alt="Diseño Interior Personalizado">
+                <figcaption>Diseño Interior Personalizado</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/interioragenda4.jpg" alt="Diseño Interior Personalizado">
+                <figcaption>Diseño Interior Personalizado</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda4.jpg" alt="Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item corporativa">
+                <img src="./img/interioragenda5.jpg" alt="Diseño Interior Corporativa">
+                <figcaption>Diseño Interior Corporativa</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda5.jpg" alt="Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda6.jpg" alt="Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item oficios">
+                <img src="./img/agenda7.jpg" alt="Agenda Personalizada Maestro/a">
+                <figcaption>Agenda Personalizada Maestro/a</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda8.jpg" alt="Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda9.jpg" alt="Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item oficios">
+                <img src="./img/agenda10.jpg" alt="Agenda dedicada al Profesor">
+                <figcaption>Agenda dedicada al Profesor</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda11.jpg" alt="Agenda dedicada a la Abuela">
+                <figcaption>Agenda dedicada a la Abuela</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda12.jpg" alt="Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda13.jpg" alt="Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda14.jpg" alt="Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item futbol">
+                <img src="./img/portada-agenda-futbol4.jpg" alt="Agenda Personalizada futbol">
+                <figcaption>Agenda Personalizada futbol</figcaption>
+              </figure>
+              <figure class="agenda-item oficios">
+                <img src="./img/agenda abogada.jpg" alt="Agenda Personalizada Abogada">
+                <figcaption>Agenda Personalizada Abogada</figcaption>
+              </figure>
+              <figure class="agenda-item oficios">
+                <img src="./img/agenda comunicadora social.jpg" alt="Agenda Personalizada Comunicadora Social">
+                <figcaption>Agenda Personalizada Comunicadora Social</figcaption>
+              </figure>
+              <figure class="agenda-item oficios">
+                <img src="./img/agenda ingeniero.jpg" alt="Agenda Personalizada Ingeniero">
+                <figcaption>Agenda Personalizada Ingeniero</figcaption>
+              </figure>
+              <figure class="agenda-item oficios">
+                <img src="./img/agenda trabajadora social.jpg" alt="Agenda Personalizada Trabajadora Social">
+                <figcaption>Agenda Personalizada Trabajadora Social</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agenda batman.jpg" alt="Agenda Personalizada Batman">
+                <figcaption>Agenda Personalizada Batman</figcaption>
+              </figure>
+              <figure class="agenda-item corporativa">
+                <img src="./img/agendacorporativa1.jpg" alt="Agenda Corporativa">
+                <figcaption>Agenda Corporativa</figcaption>
+              </figure>
+              <figure class="agenda-item corporativa">
+                <img src="./img/agendacorporativa2.jpg" alt="Agenda Corporativa">
+                <figcaption>Agenda Corporativa</figcaption>
+              </figure>
+              <figure class="agenda-item personalizada">
+                <img src="./img/agendapersonalizada.jpg" alt="Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item series">
+                <img src="./img/greys-anatomy.jpg" alt="Agenda Personalizada Greys Anatomy">
+                <figcaption>Agenda Personalizada Greys Anatomy</figcaption>
+              </figure>
+              <figure class="agenda-item series">
+                <img src="./img/agendastitch.jpg" alt="Agenda Personalizada Stitch">
+                <figcaption>Agenda Personalizada Stitch</figcaption>
+              </figure>
+              <figure class="agenda-item series">
+                <img src="./img/agendapersonalizadaserie.jpg" alt="Agenda Personalizada">
+                <figcaption>Agenda Personalizada</figcaption>
+              </figure>
+              <figure class="agenda-item series">
+                <img src="./img/drakeyjosh.PNG" alt="Agenda Personalizada Drake y Josh">
+                <figcaption>Agenda Personalizada Drake y Josh</figcaption>
+              </figure>
+              <figure class="agenda-item series">
+                <img src="./img/friends.jpg" alt="Agenda Personalizada Friends">
+                <figcaption>Agenda Personalizada Friends</figcaption>
+              </figure>
+              <figure class="agenda-item series">
+                <img src="./img/icarly.PNG" alt="Agenda Personalizada ICarly">
+                <figcaption>Agenda Personalizada ICarly</figcaption>
+              </figure>
+              <!-- Añadir más figuras según sea necesario -->
+            </div>
+          </section>
+        <section class="contact" id="contact">
+            <h2>Personaliza tu Agenda</h2>
+            <p>Por favor, completa el siguiente formulario para personalizar tu agenda según tus preferencias:</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTBLWBOaoVPnONaW3gv0PgPIxMHPSqerUlhaUWVcrhkJbAFQ/viewform?embedded=true" width="640" height="1127" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-agenda">
+        <p>&copy; 2024 SuperArte Gchu. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Scripts -->
+    <script>
+        function goToHome() {
+            window.location.href = "./index.html#home";
+        }
+        function gotoServices() {
+            window.location.href = "./index.html#Servicios";
+        }
+    </script>
+   <script>
+    // Función para filtrar las agendas según la categoría seleccionada
+    function filterAgendas(category) {
+        var items = document.getElementsByClassName('agenda-item');
+        if (category === 'all') {
+            category = ''; // Si se selecciona "All", mostrar todos los elementos
+        }
+        for (var i = 0; i < items.length; i++) {
+            removeClass(items[i], 'show');
+            if (items[i].className.indexOf(category) > -1) {
+                addClass(items[i], 'show');
+            }
+        }
+    }
+  
+    // Función para añadir una clase a un elemento
+    function addClass(element, name) {
+        if (element.className.indexOf(name) == -1) {
+            element.className += ' ' + name;
+        }
+    }
+  
+    // Función para remover una clase de un elemento
+    function removeClass(element, name) {
+        var arr = element.className.split(' ');
+        while (arr.indexOf(name) > -1) {
+            arr.splice(arr.indexOf(name), 1);
+        }
+        element.className = arr.join(' ');
+    }
+
+    // Evento que se ejecuta al cargar completamente el DOM
+    document.addEventListener("DOMContentLoaded", function() {
+        // Simula un clic en el botón de la categoría "All" para mostrar todas las agendas
+        filterAgendas('all');
+    });
+</script>
+</body>
+</html>
