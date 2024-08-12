@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap);
+
+:root{
+    --container-color: #FCE3E3;
+}
 body {
     margin:0 auto;
     padding:0;
@@ -165,94 +169,73 @@ body {
     text-decoration:none
 }
 
+/* Ver despues */
 .step.active {
     background-color:#FCE3E3;
     border-radius:20px;
     width:1070px;
-    height:220px;
-    box-shadow:0 2px 5px #0a0a0a;
-    display:flex;
-    justify-content:space-between;
-    flex-direction:column;
-    align-items:flex-start;
+    height:auto;
     margin:0 auto;
     margin-bottom:30px;
-    -webkit-user-select: none; /* Para compatibilidad con Safari */
-    user-select: none; /* Propiedad estándar */
-}
-.contenido {
-    margin:20px;
-    display:flex;
-    flex-direction:row;
-    align-items:center
-}
-.contenido1 {
-    margin:20px;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    color:#f9f9f9
-}
-.acciones {
-    margin:20px;
-    display:flex;
-    align-items:center;
-    justify-content:flex-end
-}
-.negativo {
-    width:58px;
-    height:58px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:relative;
-    left:970px;
-    top:-105px
-}
-.positivo {
-    width:58px;
-    height:58px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:relative;
-    left:970px;
-    top:-105px
-}
-.partedeabajo {
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start
-}
-.Linea {
-    width:100%;
-    background-color:#000;
-    margin-bottom:10px;
-    margin-top:-100px
-}
-.linea-oculta {
-    display:none
-}
-.description {
-    font-size:16px;
-    line-height:1.5;
-    color:#333
+    color: #0a0a0a;
 }
 .step {
     background-color:#0F6595;
     border-radius:8px;
     padding:15px;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    box-shadow:0 2px 5px #0a0a0a;
     width:1070px;
     height:100px;
-    justify-content:space-between;
     margin:50px auto;
+    color: #f9f9f9;
     -webkit-user-select: none; /* Para compatibilidad con Safari */
     user-select: none; /* Propiedad estándar */
 }
+.step, .step.active {
+    display:flex;
+    justify-content:space-between;
+    box-shadow:0 2px 5px #0a0a0a;
+    flex-direction:column;
+    align-items:flex-start;
+}
+.contenido, .contenido1, .acciones {
+    margin:20px;
+    display:flex;
+    align-items:center;
+}
+.contenido, .contenido1 {
+    flex-direction:row;
+}
+.negativo, .positivo {
+    width:58px;
+    height:58px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    left:970px;
+    top:-105px;
+    cursor: pointer;
+}
+.partedeabajo {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+.Linea {
+    width:100%;
+    background-color:#000;
+    margin-bottom:10px;
+    margin-top:-100px;
+}
+.linea-oculta {
+    display:none;
+}
+.description {
+    font-size:16px;
+    line-height:1.5;
+    color:#333;
+}
+
 .button {
     background-color: rgb(252, 214, 214);
     color: #0a0a0a;
@@ -268,31 +251,37 @@ body {
 .step .description {
     color:#666;
     line-height:1.5;
-    display:none
+    display:none;
 }
 .step.active .description {
-    display:block
+    display:block;
 }
-
 .step .number {
     font-size:40px;
     font-weight:700;
     margin-bottom:10px;
-    margin-right:30px
+    margin-right:30px;
 }
 .step .text {
     font-size:30px;
-    margin-bottom:10px
+    margin-bottom:10px;
 }
 .step .icon {
     font-size:20px;
     cursor:pointer;
-    margin-bottom:10px
+    margin-bottom:10px;
 }
 
 .step.active .icon {
-    color:#007bff
+    color:#007bff;
 }
+
+.step.active .linea-oculta {
+    display: block;
+}
+
+
+
 .button-flex:focus {
     box-shadow:0 0 0 2px #007bff;
     outline:none
@@ -626,8 +615,8 @@ footer {
 }
 .animacion {
     will-change: transform, opacity;
-  }
-  
+}
+
 @media (max-width:768px) {
     body {
         padding:0 10px
