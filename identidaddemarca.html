@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Identidad de Marca | SuperArte Gchu</title>
+    <link rel="stylesheet" href="stylesidentidad.css">
+    <meta name="description" content="En SuperArte ofrecemos diseño de identidad de marca, creando identidades que destacan, conectan y perduran en la mente de tus clientes. Nuestros servicios incluyen diseño de logotipos, paletas de colores, tipografías, manuales de marca, y aplicaciones de marca como tarjetas de visita y material publicitario. Transformamos tus ideas en una identidad visual única y profesional.">
+    <meta name="keywords" content="diseño de identidad de marca, diseño de logotipos, paletas de colores, tipografía, manual de marca, aplicaciones de marca, diseño gráfico, SuperArte, branding, diseño de branding, material publicitario">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="SuperArte Gchu">
+    <meta property="og:description" content="Descubre cómo SuperArte puede transformar tus ideas en una identidad visual única y profesional. Ofrecemos diseño de logotipos, paletas de colores y tipografía, manual de marca, y más para crear una identidad de marca que destaque y conecte con tu audiencia. ¡Construyamos juntos la esencia visual de tu negocio!">
+    <meta property="og:image" content="./img/superarte.png">
+    <meta property="og:url" content="https://superartegchu.github.io">
+    <link rel="shortcut icon" href="./img/superarte.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a onclick="goToHome()">Inicio</a></li>
+            <li><a onclick="gotoServices()">Servicios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-branding">
+        <section class="branding-intro">
+            <h1>Diseño de Identidad de Marca</h1>
+            <p>Creando identidades de marca que destacan, conectan y perduran en la mente de tus clientes. ¡Construyamos juntos la esencia visual de tu negocio!</p>
+        </section>
+
+        <section class="branding-services" id="services">
+            <h2>Servicios de Identidad de Marca</h2>
+            <div class="services-branding">
+                <div class="service-item-branding">
+                    <h3>Diseño de Logotipos</h3>
+                    <p>Logotipos únicos y memorables que representan la esencia de tu marca.</p>
+                </div>
+                <div class="service-item-branding">
+                    <h3>Paletas de Colores y Tipografía</h3>
+                    <p>Definimos los colores y tipografías que mejor representan tu marca.</p>
+                </div>
+                <div class="service-item-branding">
+                    <h3>Manual de Marca</h3>
+                    <p>Un manual completo que asegura la coherencia visual en todas tus comunicaciones.</p>
+                </div>
+                <div class="service-item-branding">
+                    <h3>Aplicaciones de Marca</h3>
+                    <p>Desde tarjetas de visita hasta material publicitario, llevamos tu marca a todos los medios.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="brand-samples">
+            <h2>Muestras de Identidades de Marca</h2>
+            <p>Descubre cómo hemos ayudado a otras marcas a destacar con identidades visuales sólidas.</p>
+            <div class="gallery">
+                <!-- Aquí irían las imágenes de muestras de identidad de marca -->
+                <!--<figure>
+                    <img src="./img/brand-sample1.jpg" alt="Ejemplo de Identidad de Marca 1">
+                    <figcaption>Identidad de Marca para [Nombre de la Marca]</figcaption>
+                </figure>-->
+                <figure>
+                    <div class="image-container">
+                    <img src="./img/Logo Naty.png" alt="Logo Mi Bella Pizzeria" class="logobella"></div>
+                    <figcaption>Logo para Mi Bella</figcaption>
+                </figure>
+                <figure>
+                    <div class="image-container">
+                    <img src="./img/namastelogo.png" alt="Logo Namasté" class="logonamaste"></div>
+                    <figcaption>Logo para Namasté</figcaption>
+                </figure>
+                <figure>
+                    <div class="image-container">
+                    <img src="./img/biggestpanther-logo.png" alt="Logo Biggest Panther" class="logopanther"></div>
+                    <figcaption>Logo para Biggest Panther</figcaption>
+                </figure>
+                <figure class="special-figure">
+                    <div class="image-container1">
+                        <img src="./img/imagen.png" alt="Tarjeta Presentación SuperArte Gchu" class="superartegchu">
+                    </div>
+                    <figcaption class="special-figcaption">Tarjeta Presentación SuperArte Gchu</figcaption>
+                </figure>
+               
+                <!-- Añadir más ejemplos según sea necesario -->
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Comencemos Tu Proyecto de Identidad de Marca</h2>
+            <p>Completa el formulario para empezar a trabajar en la identidad visual de tu marca. Si necesitas subir archivos, por favor sigue las instrucciones al final del formulario.</p>
+            <button type="button" class="button" title="Formulario para Identidad de Marca" onclick="window.open('https://forms.gle/VtqRMXpBizpN2Y7k6', '_blank')">Completar Formulario</button>
+            <p class="envio">Para subir archivos, envíalos por correo a <strong>superartegchu@gmail.com</strong> o utiliza <a href="https://www.dropbox.com/scl/fo/ampmxjzs4lfs1jmzz1dih/AOS1w_rQi8UtBmZmdh_C5bw?rlkey=mjeg7xo42pb01ry92na45nxf0&st=08j687j5&dl=0" target="_blank" rel="noopener">este enlace</a></p>
+        </section>
+    </main>
+
+    <footer class="footer-branding">
+        <p>&copy; 2024 SuperArte Gchu. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function goToHome() {
+            window.location.href = "./index.html#home";
+        }
+        function gotoServices() {
+            window.location.href = "./index.html#Servicios";
+        }
+    </script>
+</body>
+</html>
