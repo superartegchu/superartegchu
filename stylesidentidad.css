@@ -1,0 +1,302 @@
+@import url(https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap);
+/* VARIABLES */
+:root {
+    --color-de-fondo: #C8DEFF;
+    --container-color: #FCE3E3;
+    --agenda-container-color: #f9f9f9;
+    --button-color: #0F6595;
+    --button-hover-color: #29a3e6;
+    --padding-principal: 2rem;
+    --ancho-maximo: 1200px;
+    --color-titulo: #0F6595;
+    --color-texto: #0a0a0a;
+    --font-principal: 'Space Grotesk', sans-serif;
+}
+
+/* REINICIO Y GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-de-fondo);
+    font-family: var(--font-principal);
+    color: var(--color-texto);
+}
+
+/* NAVEGACIÓN FIJA */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--button-color);
+    z-index: 1000; /* Asegura que el nav esté sobre otros elementos */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0; /* Quita el margen para que no afecte la posición */
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: var(--button-hover-color);
+}
+/* Main Content Styles */
+.main-branding {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px;
+}
+
+.branding-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.branding-intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.branding-intro p {
+    font-size: 18px;
+    color: var(--color-texto);
+}
+
+/* Branding Services Section */
+.branding-services {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.branding-services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-branding {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-item-branding {
+    background-color: #dbecfc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 48%; /* 2 items per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item-branding h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item-branding p {
+    font-size: 16px;
+    color: var(--color-texto);
+}
+
+/* Brand Samples Section */
+#brand-samples {
+    margin-bottom: 50px;
+}
+
+#brand-samples h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#brand-samples p {
+    text-align: center;
+    font-size: medium;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+    gap: 30px;
+}
+
+.gallery figure {
+    width: calc(33.33% - 20px); /* Cada figure ocupará aproximadamente un tercio del espacio disponible */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.image-container, .image-container1 {
+    margin: 0 auto; /* Centra el contenedor dentro del figure */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Aplica el box-shadow al contenedor */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    width: 100%; /* Asegura que todos los contenedores tengan el mismo tamaño */
+}
+
+.image-container img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%; /* Asegura que las imágenes ocupen todo el contenedor */
+}
+
+.image-container1 img {
+    width: 90%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.gallery figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--color-texto);
+}
+
+.gallery figure.special-figure {
+    width: calc(33.33% - 20px); /* Ajusta el ancho del figure especial para que se alinee con los demás */
+    margin-bottom: 30px; /* Asegura que haya consistencia en el margen inferior */
+    text-align: center; /* Centra el contenido dentro del figure especial */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todos los elementos dentro del figure */
+}
+
+.special-figcaption {
+    text-align: center; /* Alinea el texto igual que las otras figuras */
+    margin-top: 10px;
+    width: 100%; /* Asegura que el figcaption ocupe el ancho completo */
+}
+
+
+
+
+/* Contact Section */
+.contact {
+    background-color: #3a6b92;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.envio {
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.envio a {
+    text-decoration: none;
+    color: #f9f9f9;
+    background-color: #0e374d;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.button {
+    border: none;
+    color: #f9f9f9;
+    background-color: #0e374d;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+.footer-branding {
+    background: #0a0a0a;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    margin-top: auto; /* Esto empuja el footer al final */
+}
+
+.footer-branding p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .services-branding {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item-branding {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery figure {
+        flex: 1 1 100%;
+    }
+
+    /* Estilos para la clase .envio */
+    .envio {
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px; /* Ajusta el espacio superior */
+    }
+
+    .envio a {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 16px;
+        background-color: #0e374d;
+        color: #f9f9f9;
+        border-radius: 10px;
+        margin-top: 20px; /* Ajusta el margen superior del botón */
+        text-decoration: none;
+    }
+
+    /* Aseguramos que la sección .contact tenga espacio suficiente */
+    .contact {
+        margin-bottom: 60px; /* Añade espacio inferior adicional */
+    }
+}
