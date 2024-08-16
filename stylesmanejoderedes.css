@@ -1,0 +1,293 @@
+@import url(https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap);
+/* VARIABLES */
+:root {
+    --color-de-fondo: #C8DEFF;
+    --container-color: #f9f9f9;
+    --button-color: #0F6595;
+    --button-hover-color: #29a3e6;
+    --color-titulo: #0F6595;
+    --color-texto: #0a0a0a;
+    --font-principal: 'Space Grotesk', sans-serif;
+}
+
+/* REINICIO Y GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-de-fondo);
+    font-family: var(--font-principal);
+    color: var(--color-texto);
+}
+/* NAVEGACIÓN FIJA */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--button-color);
+    z-index: 1000; /* Asegura que el nav esté sobre otros elementos */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-top: 5px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: var(--button-hover-color);
+}
+
+.header-content {
+    padding-top: 70px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-content p {
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.cta-button {
+    background-color: var(--button-color);
+    text-align: center;
+    color: var(--container-color);
+    text-decoration: none;
+    border-radius: 10px;
+    padding:5px 10px;
+    border:none;
+    cursor:pointer;
+}
+
+.main-manejo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px;
+    padding-top: 10px;
+}
+
+.services {
+    display: flex;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-card {
+    background-color: #dbecfc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 48%; /* 2 items per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: var(--color-texto);
+}
+
+/* Contact Section */
+.contact {
+    background-color: #3a6b92;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    padding-top: 3px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width:50%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    order:2
+}
+
+.form-container {
+    width:50%;
+    padding:50px;
+    padding-right:100px;
+    padding-bottom:90px;
+    order:1
+}
+.form-container label {
+    display:block;
+    margin-bottom:10px
+}
+.form-container input,.form-container textarea {
+    width:100%;
+    padding:10px;
+    border:1px solid var(--color-texto);
+    border-radius:5px
+}
+.form-container textarea {
+    height:100px
+}
+.form-container input[type="submit"] {
+    background-color:var(--color-texto);
+    color:#fff;
+    padding:15px 10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-left:13px
+}
+.contact-container img {
+    width:75%;
+    height:auto;
+    padding-left:295px
+}
+
+/* Footer Styles */
+.footer {
+    background: var(--color-texto);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    margin-top: auto; /* Esto empuja el footer al final */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    padding:10px 10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background-color: var(--color-texto);
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .service-card {
+        width: 100%;
+    }
+
+    .form-container,
+    .image-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact-container img {
+        padding-left: 0;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Coloca los elementos uno al lado del otro */
+        justify-content: space-around; /* Distribuye los elementos de manera uniforme */
+        padding: 10px 0; /* Ajusta el padding para que el nav no sea tan alto */
+    }
+
+    nav ul li {
+        margin: 0; /* Elimina márgenes para evitar separación excesiva */
+        flex-grow: 1; /* Permite que cada elemento ocupe el mismo ancho */
+        text-align: center; /* Centra el texto en cada elemento */
+    }
+
+    nav ul li a {
+        padding: 10px 5px; /* Reduce el padding para que el tamaño de los elementos sea más pequeño */
+        font-size: 14px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        color: #fff;
+    }
+
+    .main-manejo {
+        padding: 20px;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
