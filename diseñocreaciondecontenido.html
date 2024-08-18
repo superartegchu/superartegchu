@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación y Edición de Contenido | SuperArte Gchu</title>
+    <link rel="stylesheet" href="stylescontenido.css">
+    <meta name="description" content="En SuperArte te ayudamos a destacar en redes sociales con contenido visual creativo y de calidad. Ofrecemos servicios de creación y edición de contenido, gestión de redes sociales, diseño de material promocional y mucho más.">
+    <meta name="keywords" content="creación de contenido, edición de contenido, gestión de redes sociales, diseño de material promocional, contenido visual, SuperArte, marketing digital">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="SuperArte Gchu">
+    <meta property="og:description" content="Destaca en redes sociales con contenido visual creativo y de calidad. En SuperArte te ofrecemos servicios de creación y edición de contenido, gestión de redes sociales, y diseño de material promocional para hacer crecer tu presencia digital.">
+    <meta property="og:image" content="./img/superarte.png">
+    <meta property="og:url" content="https://superartegchu.github.io">
+    <link rel="shortcut icon" href="./img/superarte.png">
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a onclick="goToHome()">Inicio</a></li>
+            <li><a onclick="gotoServices()">Servicios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-contenido">
+        <section class="contenido-intro">
+            <h1>Creación y Edición de Contenido</h1>
+            <p>Impulsa tu marca con contenido visual atractivo y profesional en redes sociales. ¡Nos encargamos de todo para que tu mensaje llegue a tu audiencia de manera efectiva!</p>
+        </section>
+
+        <section class="contenido-services" id="services">
+            <h2>Servicios de Creación y Edición de Contenido</h2>
+            <div class="services-contenido">
+                <div class="service-item-contenido">
+                    <h3>Creación de Contenido Visual</h3>
+                    <p>Diseñamos contenido único y creativo para destacar en redes sociales.</p>
+                </div>
+                <div class="service-item-contenido">
+                    <h3>Edición de Videos y Fotos</h3>
+                    <p>Transformamos tus ideas en videos y fotos profesionales que captan la atención.</p>
+                </div>
+                <div class="service-item-contenido">
+                    <h3>Gestión de Redes Sociales</h3>
+                    <p>Manejamos tus redes sociales para que te concentres en lo que más importa: tu negocio.</p>
+                </div>
+                <div class="service-item-contenido">
+                    <h3>Diseño de Material Promocional</h3>
+                    <p>Desde banners hasta anuncios, creamos materiales que impulsan tu marca.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="content-samples">
+            <h2>Muestras de Nuestro Trabajo</h2>
+            <p>Descubre algunos de los proyectos de contenido visual que hemos realizado para nuestros clientes.</p>
+            <!-- Botones para Filtrar Categorías -->
+            <div class="filter-buttons">
+                <button onclick="filterContenido('all')">Todas</button>
+                <button onclick="filterContenido('post')">Publicaciones</button>
+                <button onclick="filterContenido('stories')">Historias</button>
+                <!--<button onclick="filterContenido('description')">Descripción</button>
+                <button onclick="filterContenido('highlight')">Historias Destacadas</button>-->
+             </div>
+            <div class="gallery">
+                <!-- Aquí irían las imágenes de muestras de contenido -->
+                <figure class="contenido-item post">
+                    <div class="image-container">
+                        <img src="./img/imagen depi1.jpg" alt="Depilación Definitiva">
+                    </div>
+                    <figcaption>Depilación Definitiva</figcaption>
+                </figure>
+                <figure class="contenido-item post">
+                    <div class="image-container">
+                        <img src="./img/vela slim plus.jpg" alt="Vela Slim Plus">
+                    </div>
+                    <figcaption>Vela Slim Plus</figcaption>
+                </figure>
+                <figure class="contenido-item post">
+                    <div class="image-container">
+                        <img src="./img/imagen depi2.jpg" alt="Depilación Definitiva">
+                    </div>
+                    <figcaption>Depilación Definitiva</figcaption>
+                </figure>
+                <figure class="contenido-item post">
+                    <div class="image-container">
+                        <img src="./img/cuidados-con-tu-piel.jpg" alt="Cuidados con tu piel">
+                    </div>
+                    <figcaption>Cuidados con tu piel</figcaption>
+                </figure>
+                <figure class="contenido-item post">
+                    <div class="image-container">
+                        <img src="./img/piernas cansadas.jpg" alt="Piernas Cansadas">
+                    </div>
+                    <figcaption>Piernas Cansadas (Promo)</figcaption>
+                </figure>
+                <figure class="contenido-item post">
+                    <div class="image-container">
+                        <img src="./img/limpieza-facial.jpg" alt="Limpieza Facial">
+                    </div>
+                    <figcaption>Limpieza Facial</figcaption>
+                </figure>
+                <figure class="contenido-item post">
+                    <div class="image-container">
+                        <img src="./img/criolipolisisbeneficios.jpg" alt="Criolipolisis Beneficios">
+                    </div>
+                    <figcaption>Criolipolisis Beneficios</figcaption>
+                </figure>
+                <figure class="contenido-item post">
+                    <div class="image-container">
+                        <img src="./img/depilación definitiva.png" alt="Depilación Definitiva">
+                    </div>
+                    <figcaption>Depilación Definitiva</figcaption>
+                </figure>
+                <figure class="contenido-item post">
+                    <div class="image-container">
+                        <img src="./img/Malos hábitos para tu piel - Namasté Post.gif" alt="Malos Hábitos para tu piel">
+                    </div>
+                    <figcaption>Malos Hábitos para tu piel</figcaption>
+                </figure>
+
+                <!-- Historias -->
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/circuitoantiflacidez.jpg" alt="Circuito Anti Flacidez">
+                    </div>
+                    <figcaption>Circuito Anti Flacidez</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/circuitoestrias.jpg" alt="Circuito Estrias">
+                    </div>
+                    <figcaption>Circuito Estrias</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/circuitoreafirmante.jpg" alt="Circuito Reafirmante">
+                    </div>
+                    <figcaption>Circuito Reafirmante</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/circuitoreductor.jpg" alt="Circuito Reductor">
+                    </div>
+                    <figcaption>Circuito Reductor</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/circuitoreductor1.jpg" alt="Circuito Reductor">
+                    </div>
+                    <figcaption>Circuito Reductor</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/circuitorelajacion.jpg" alt="Circuito Relajación">
+                    </div>
+                    <figcaption>Circuito Relajación</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/circuitozen.jpg" alt="Circuito Zen">
+                    </div>
+                    <figcaption>Circuito Zen</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/comboarmonizar.jpg" alt="Combo Armonizar">
+                    </div>
+                    <figcaption>Combo Armonizar</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/comboarrugas.jpg" alt="Combo Arrugas">
+                    </div>
+                    <figcaption>Combo Arrugas</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/comboestrias.jpg" alt="Combo Estrias">
+                    </div>
+                    <figcaption>Combo Estrias</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/comboextrareduccion.jpg" alt="Combo Extra Reducción">
+                    </div>
+                    <figcaption>Combo Extra Reducción</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/comboreduccion.jpg" alt="Combo Reducción">
+                    </div>
+                    <figcaption>Combo Reducción</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/comboreducir.jpg" alt="Combo Reducir">
+                    </div>
+                    <figcaption>Combo Reducir</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/comborosacea.jpg" alt="Combo Rosácea">
+                    </div>
+                    <figcaption>Combo Rosácea</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/estamosdevuelta-historia.jpg" alt="Estamos de Vuelta">
+                    </div>
+                    <figcaption>Estamos de Vuelta</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/intensivodepestañas.jpg" alt="Intensivo de Pestañas">
+                    </div>
+                    <figcaption>Intensivo de Pestañas</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/lineasdeexpresion.jpg" alt="Lineas de Expresión">
+                    </div>
+                    <figcaption>Lineas de Expresión</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/mesdelpadre.jpg" alt="Mes del Padre">
+                    </div>
+                    <figcaption>Mes del Padre</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/talleruñas.jpg" alt="Taller de Uñas">
+                    </div>
+                    <figcaption>Taller de Uñas</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/tratamientoscorporales.jpg" alt="Tratamientos Corporales">
+                    </div>
+                    <figcaption>Tratamientos Corporales</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/tratamientosfaciales.jpg" alt="Tratamientos Faciales">
+                    </div>
+                    <figcaption>Tratamientos Faciales</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/viernesdepizzas.jpg" alt="Viernes de Pizzas">
+                    </div>
+                    <figcaption>Viernes de Pizzas para Mi Bella Pizza</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/Namaste promo.png" alt="Limpieza Facial Profunda">
+                    </div>
+                    <figcaption>Limpieza Facial Profunda</figcaption>
+                </figure>
+                <figure class="contenido-item stories">
+                    <div class="image-container">
+                        <img src="./img/Gestión de redes sociales - Packs.png" alt="Gestión de Redes Sociales">
+                    </div>
+                    <figcaption>Gestión de Redes Sociales</figcaption>
+                </figure>
+                <!-- Añadir más ejemplos según sea necesario -->
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <h2>Suscríbete a Nuestro Newsletter</h2>
+            <div id="mc_embed_signup">
+                <form action="https://github.us9.list-manage.com/subscribe/post?u=e3b327d07fe97f855d76bc83b&amp;id=429742c23d&amp;f_id=00d2c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <div id="mc_embed_signup_scroll">
+                        <h2>Suscríbete</h2>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Dirección de correo electrónico <span class="asterisk">*</span></label>
+                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">Nombre <span class="asterisk">*</span></label>
+                            <input type="text" name="FNAME" class="required text" id="mce-FNAME" required="">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-LNAME">Apellido <span class="asterisk">*</span></label>
+                            <input type="text" name="LNAME" class="required text" id="mce-LNAME" required="">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-PHONE">Número de teléfono <span class="asterisk">*</span></label>
+                            <input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE">
+                        </div>
+                        <div class="mc-field-group size1of2">
+                            <label for="mce-BIRTHDAY-month">Cumpleaños</label>
+                            <div class="datefield">
+                                <span class="subfield monthfield">
+                                    <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month">
+                                </span> /
+                                <span class="subfield dayfield">
+                                    <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day">
+                                </span>
+                                <span class="small-meta nowrap">( mm / dd )</span>
+                            </div>
+                        </div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <div aria-hidden="true" style="position:absolute; left:-5000px;">
+                            <input type="text" name="b_e3b327d07fe97f855d76bc83b_429742c23d" tabindex="-1" value="">
+                        </div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Suscribirme">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                <script type="text/javascript">
+                    (function($) {
+                        window.fnames = new Array();
+                        window.ftypes = new Array();
+                        fnames[0] = 'EMAIL';
+                        ftypes[0] = 'email';
+                        fnames[1] = 'FNAME';
+                        ftypes[1] = 'text';
+                        fnames[2] = 'LNAME';
+                        ftypes[2] = 'text';
+                        fnames[4] = 'PHONE';
+                        ftypes[4] = 'phone';
+                        fnames[5] = 'BIRTHDAY';
+                        ftypes[5] = 'birthday';
+                        fnames[3] = 'ADDRESS';
+                        ftypes[3] = 'address';
+                    }(jQuery));
+                    var $mcj = jQuery.noConflict(true);
+                </script>
+            </div>
+        </section>        
+
+        <!-- Botón flotante de WhatsApp -->
+              <a href="https://wa.me/5493446519593" class="whatsapp-button" target="_blank">
+                 <img src="./img/whatsapp.png" alt="WhatsApp">
+              </a>
+
+        <section class="contact" id="contact">
+            <h2>Comencemos Tu Proyecto de Contenido</h2>
+            <p>Completa el formulario para empezar a trabajar en la creación y edición de contenido para tus redes sociales.</p>
+            <button type="button" class="button" title="Formulario para Contenido" onclick="window.open('https://forms.gle/exhZvjWSzheqy4gu9', '_blank')">Completar Formulario</button>
+            <p class="envio">Para subir archivos, envíalos por correo a <strong>superartegchu@gmail.com</strong> o utiliza <a href="https://www.dropbox.com/scl/fo/ampmxjzs4lfs1jmzz1dih/AOS1w_rQi8UtBmZmdh_C5bw?rlkey=mjeg7xo42pb01ry92na45nxf0&st=7k1qvrew&dl=0" target="_blank" rel="noopener">Dropbox</a></p>
+        </section>
+    </main>
+
+    <footer class="footer-contenido">
+        <p>&copy; 2024 SuperArte Gchu. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function goToHome() {
+            window.location.href = "./index.html#home";
+        }
+        function gotoServices() {
+            window.location.href = "./index.html#Servicios";
+        }
+    </script>
+
+<script>
+    // Función para filtrar el contenido según la categoría seleccionada
+    function filterContenido(category) {
+        var items = document.getElementsByClassName('contenido-item');
+        if (category === 'all') {
+            category = ''; // Si se selecciona "Todas", mostrar todos los elementos
+        }
+        for (var i = 0; i < items.length; i++) {
+            removeClass(items[i], 'show');
+            if (items[i].className.indexOf(category) > -1) {
+                addClass(items[i], 'show');
+            }
+        }
+    }
+
+    // Función para añadir una clase a un elemento
+    function addClass(element, name) {
+        if (element.className.indexOf(name) === -1) {
+            element.className += ' ' + name;
+        }
+    }
+
+    // Función para remover una clase de un elemento
+    function removeClass(element, name) {
+        var arr = element.className.split(' ');
+        while (arr.indexOf(name) > -1) {
+            arr.splice(arr.indexOf(name), 1);
+        }
+        element.className = arr.join(' ');
+    }
+
+    // Evento que se ejecuta al cargar completamente el DOM
+    document.addEventListener("DOMContentLoaded", function() {
+        // Simula un clic en el botón de la categoría "Todas" para mostrar todo el contenido
+        filterContenido('all');
+    });
+</script>
+
+</body>
+</html>
