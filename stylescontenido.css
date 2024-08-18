@@ -1,0 +1,421 @@
+@import url(https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap);
+/* VARIABLES */
+:root {
+    --color-de-fondo: #C8DEFF;
+    --container-color: #f9f9f9;
+    --button-color: #0F6595;
+    --button-hover-color: #29a3e6;
+    --color-titulo: #0F6595;
+    --color-texto: #0a0a0a;
+    --font-principal: 'Space Grotesk', sans-serif;
+}
+
+/* REINICIO Y GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-de-fondo);
+    font-family: var(--font-principal);
+    color: var(--color-texto);
+}
+/* NAVEGACIÓN FIJA */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--button-color);
+    z-index: 1000; /* Asegura que el nav esté sobre otros elementos */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-top: 5px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: var(--button-hover-color);
+}
+
+.main-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px;
+    padding-top: 10px;
+}
+
+.contenido-intro {
+    padding-top: 45px;
+    text-align: center;
+}
+
+.contenido-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contenido-intro p {
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.contenido-services {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.services-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-item-contenido {
+    background-color: #dbecfc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 48%; /* 2 items per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contenido-services h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#content-samples {
+    padding: 2em;
+    background-color: var(--container-color);
+    margin-top: 50px;
+}
+
+#content-samples h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#content-samples p {
+    font-size: medium;
+    text-align: center;
+}
+
+.contenido-item {
+    display: none; /* Oculta todos los elementos por defecto */
+}
+
+.contenido-item.show {
+    display: block; /* Muestra los elementos con la clase 'show' */
+}
+
+.filter-buttons button {
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--button-color);
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button:hover {
+    background-color: #2c77ce;
+}
+
+/* Ajuste específico para las publicaciones cuadradas */
+.contenido-item.post img {
+    width: 100%;
+    height: auto; /* Mantener proporción */
+    max-height: 1080px; /* Altura máxima de 1080px */
+    aspect-ratio: 1 / 1; /* Mantener relación de aspecto 1:1 */
+    object-fit: cover; /* Ajuste del contenido dentro del contenedor */
+}
+
+/* Asegurar que las publicaciones cuadradas se muestren correctamente */
+.contenido-item.post {
+    width: 100%;
+    max-width: 1080px; /* Ancho máximo de 1080px */
+    margin: 0 auto;
+}
+
+
+/* Ajuste específico para las historias */
+.contenido-item.stories img {
+    width: 100%;
+    height: auto; /* Mantener proporción */
+    max-height: 1920px; /* Altura máxima de 1920px */
+    aspect-ratio: 9 / 16; /* Mantener relación de aspecto 9:16 */
+    object-fit: cover; /* Ajuste del contenido dentro del contenedor */
+}
+
+/* Asegurar que las historias se muestren correctamente en dispositivos con diferentes tamaños de pantalla */
+.contenido-item.stories {
+    width: 100%;
+    max-width: 1080px; /* Ancho máximo de 1080px */
+    margin: 0 auto;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery figure {
+    flex: 1 1 calc(33.333% - 2em);
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+  
+  .gallery img {
+    width: 100%;
+    height: 300px; /* Ajusta la altura deseada */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    border-radius: 8px;
+}
+  
+  .gallery figcaption {
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+#subscribe {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 50px;
+}
+
+#subscribe h2 {
+    margin-bottom: 10px;
+}
+
+#subscribe form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subscribe input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    max-width: 400px;
+}
+
+#subscribe button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 60px; /* Tamaño del ícono */
+    height: 60px;
+    display: block;
+}
+
+/* Personalizar el contenedor del formulario */
+#mc_embed_signup {
+    background-color: #dbecfc !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+    max-width: 100% !important;
+    clear: left !important;
+    font: 14px Helvetica, Arial, sans-serif !important;
+}
+
+/* Estilos para el título */
+#mc_embed_signup h2 {
+    color: #333 !important;
+    font-family: 'Arial', sans-serif !important;
+    font-size: 24px !important;
+    text-align: center !important;
+}
+
+/* Estilos para los campos del formulario */
+#mc_embed_signup input[type="email"],
+#mc_embed_signup input[type="text"],
+#mc_embed_signup input[type="submit"] {
+    width: 100% !important;
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+}
+
+/* Estilos para el botón de envío */
+#mc_embed_signup .button {
+    background-color: #007bff !important;
+    color: #fff !important;
+    border: none !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+}
+
+#mc_embed_signup .button:hover {
+    background-color: #0056b3 !important;
+}
+
+/* Estilos para los mensajes de error/exito */
+#mc_embed_signup .response {
+    color: #d9534f !important;
+    margin-top: 10px !important;
+}
+
+#mc_embed_signup .response.success {
+    color: #5cb85c !important;
+}
+
+/* Ocultar el logotipo de Mailchimp */
+.refferal_badge {
+    display: none !important;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #3a6b92;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    padding-top: 3px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #d5e9ff !important;
+    color: var(--color-texto) !important;
+    border: none !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    padding: 10px 20px; /* Equilibrio entre alto y ancho */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center; /* Centra el texto */
+    display: inline-block; /* Asegura que el botón se ajuste al contenido */
+    line-height: normal; /* Asegura que el texto no esté comprimido verticalmente */
+}
+
+.envio a{
+    text-decoration: underline;
+    color: var(--container-color);
+}
+
+/* Footer */
+.footer-contenido{
+    background: var(--color-texto);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    margin-top: -20px; 
+}
+
+.footer-contenido p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* CONSULTAS DE MEDIOS */
+@media (max-width: 1024px) {
+    .service-item-contenido {
+        width: 100%; /* 1 item per row */
+    }
+
+    .gallery figure {
+        flex: 1 1 calc(50% - 1em); /* Ajusta el tamaño de las imágenes en tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery figure {
+        flex: 1 1 100%; /* Ajusta el tamaño de las imágenes en móviles */
+    }
+
+    .main-contenido {
+        padding: 50px 20px; /* Reduce padding en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .contenido-intro h1 {
+        font-size: 2rem; /* Ajuste del tamaño del texto en móviles */
+    }
+
+    .contenido-services {
+        padding: 20px; /* Reduce el padding en pantallas pequeñas */
+    }
+}
