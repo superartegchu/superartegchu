@@ -1,0 +1,269 @@
+@import url(https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap);
+/* VARIABLES */
+:root {
+    --color-de-fondo: #C8DEFF;
+    --container-color: #f9f9f9;
+    --button-color: #0F6595;
+    --button-hover-color: #29a3e6;
+    --color-titulo: #0F6595;
+    --color-texto: #0a0a0a;
+    --font-principal: 'Space Grotesk', sans-serif;
+}
+
+/* REINICIO Y GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-de-fondo);
+    font-family: var(--font-principal);
+    color: var(--color-texto);
+}
+/* NAVEGACIÓN FIJA */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--button-color);
+    z-index: 1000; /* Asegura que el nav esté sobre otros elementos */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin-top: 5px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: var(--button-hover-color);
+}
+
+.main-material {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px;
+    padding-top: 10px;
+}
+
+.material-intro {
+    padding-top: 45px;
+    text-align: center;
+}
+
+.material-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.material-intro p {
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.material-services {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.services-material {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  /* Espacio entre los elementos */
+}
+
+.service-item-material {
+    background-color: #dbecfc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 48%; /* 2 items per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.material-services h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #2980b9; /* Color inicial */
+    color: var(--container-color);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px; /* Equilibrio entre alto y ancho */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center; /* Centra el texto */
+    display: inline-block; /* Asegura que el botón se ajuste al contenido */
+    line-height: normal; /* Asegura que el texto no esté comprimido verticalmente */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transición suave del color */
+    transition-delay: 0.2s; /* Retardo antes de que comience la transición */
+    transition: color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #95c7fd; /* Color cuando el mouse está sobre el botón */
+    color: var(--color-texto);
+}
+
+.contact-button {
+    background-color: #2b4f6d; /* Color inicial */
+    color: var(--container-color);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px; /* Equilibrio entre alto y ancho */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center; /* Centra el texto */
+    display: inline-block; /* Asegura que el botón se ajuste al contenido */
+    line-height: normal; /* Asegura que el texto no esté comprimido verticalmente */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transición suave del color */
+    transition-delay: 0.2s; /* Retardo antes de que comience la transición */
+    transition: color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #C8DEFF;
+    color: var(--color-texto);
+}
+
+
+/* Contact Section */
+.contact {
+    background-color: #3a6b92;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    padding-top: 3px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer-material{
+    background: var(--color-texto);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    margin-top: -20px; 
+}
+
+.footer-material p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Whatsapp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 60px; /* Tamaño del ícono */
+    height: 60px;
+    display: block;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .material-intro h1 {
+        font-size: 2rem;
+    }
+
+    .service-item-material {
+        width: 100%;
+    }
+
+    .main-material {
+        padding: 3.5rem; /* Ajuste de padding para pantallas pequeñas */
+    }
+
+    nav ul {
+        padding: 0 1rem;
+        height: 50px; /* Ajusta la altura en pantallas más pequeñas */
+    }
+
+    nav ul li {
+        margin: 0 0.5rem; /* Reduce el margen entre elementos en pantallas más pequeñas */
+    }
+
+    .button, .contact-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .material-intro h1 {
+        font-size: 1.5rem;
+    }
+    .main-material {
+        padding: 1rem; /* Ajuste de padding para pantallas muy pequeñas */
+        padding-top: 0.5rem;
+    }
+    .button, .contact-button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    nav ul {
+        padding: 0 0.5rem;
+        height: 45px; /* Ajusta la altura en pantallas muy pequeñas */
+    }
+
+    nav ul li {
+        margin-bottom: 8px;
+        margin: 0 0.3rem; /* Reduce aún más el margen en pantallas muy pequeñas */
+    }
+}
